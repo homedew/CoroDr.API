@@ -30,7 +30,7 @@ namespace Catalog.API.Controllers
         [Route("items")]
         [ProducesResponseType(typeof(PaginationItemsViewModel<CatalogList>), StatusCodes.Status200OK)]
         [ProducesResponseType(StatusCodes.Status400BadRequest)]
-        public async Task<IActionResult> ItemsAsync([FromQuery] int pageSize = 10, [FromQuery] int pageIndex = 1)
+        public async Task<IActionResult> ItemsAsync([FromQuery] int pageSize = 12, [FromQuery] int pageIndex = 1)
         {
             //need to rewrite
             var totalItems = await _coroDrCatalogContext.CatalogLists.LongCountAsync();
