@@ -14,7 +14,7 @@ public static class Extension
 
 		}
 
-		services.AddDbContext<CoroDrCatalogContext>(option =>
+		services.AddDbContext<CatalogContext>(option =>
 		{
 			var connectionString = configuration.GetRequiredConnectionString("CatalogDb");
 			option.UseSqlServer(connectionString, ConfigurationSqlOptions);

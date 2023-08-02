@@ -18,9 +18,9 @@ namespace Catalog.API.Controllers
     {
 
         // need to update it for decoupling
-        private readonly CoroDrCatalogContext _coroDrCatalogContext;
+        private readonly CatalogContext _coroDrCatalogContext;
 
-        public CatalogController(CoroDrCatalogContext context)
+        public CatalogController(CatalogContext context)
         {
             _coroDrCatalogContext = context ?? throw new ArgumentNullException(nameof(context));
         }
