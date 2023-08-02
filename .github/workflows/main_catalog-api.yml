@@ -53,5 +53,5 @@ jobs:
         with:
           app-name: 'catalog-api'
           slot-name: 'Production'
-          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_93CD8DAEA38E4AE292C7CE489B201CC4 }}
+          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_1C235804E9A44652A54B754A010D4639 }}
           package: .
